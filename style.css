@@ -1,0 +1,277 @@
+:root {
+  --primary: #1e1a1a;
+  --background: #f9f9f9;
+  --text: #333;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+.hero {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+}
+
+.hero-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.about-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-layout {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  width: 200px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.4s ease-in-out;
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-text h2 {
+  margin-top: 0;
+}
+
+.about-text p {
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.section p,
+.section ul,
+.section .card {
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1e1a1a;
+  color: white;
+}
+
+.contact-card {
+  background: #fff;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #f5f5f5 0px,
+    #f5f5f5 1px,
+    transparent 1px,
+    transparent 24px
+  );
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  border-right: 3px solid #1e1a1a;
+  max-width: 320px;
+  width: 100%;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.contact-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+}
+
+.contact-card a {
+  color: #1e1a1a;
+  text-decoration: no;
+}
+
+.contact-card a:hover {
+  color: #1e1a1a;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav a {
+  background-color: white;
+  color: #1e1a1a;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+  background-color: #e0f0ff;
+  transform: translateY(-2px);
+}
+
+.hero {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  color: #1e1a1a;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #1e1a1a;
+  text-decoration: underline;
+  font-weight: bold;
+}
